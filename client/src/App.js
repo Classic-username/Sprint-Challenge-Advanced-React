@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Advanced React Sprint: this displays the Women's World Cup most searched women.</h2>
+        <h2>Advanced React Sprint: this displays the Women's World Cup most searched women from June-July.</h2>
         <PlayerData />
       </header>
     </div>
