@@ -1,23 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PlayerData from './components/PlayerData';
+import useBlindMode from './hooks/useBlindMode'
+
 
 function App() {
+
+  const [blindMode, setBlindMode] = useBlindMode(false);
+  const toggleMode = e => {
+    e.preventDefault();
+    setBlindMode(!blindMode)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <h2>Advanced React Sprint: this displays the Women's World Cup most searched women from June-July.</h2>
+          <button onClick={toggleMode}>inconspicuous button</button>
+        </div>
+        
+        <PlayerData />
       </header>
     </div>
   );
