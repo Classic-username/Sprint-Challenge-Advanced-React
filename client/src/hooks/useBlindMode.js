@@ -6,7 +6,7 @@ const useBlindMode = () => {
 
     useEffect(() => {
         if(blindMode === true){
-            document.classList.add('blind-mode');
+            document.body.classList.add('blind-mode');
         }else{
             document.body.classList.remove('blind-mode')
         }
