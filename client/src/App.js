@@ -21,7 +21,6 @@ function App() {
           <button onClick={toggleMode}>inconspicuous button</button>
         </div>
         
-        
         <PlayerData />
       </header>
     </div>
